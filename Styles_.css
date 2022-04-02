@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    /* background-color: rgb(13,85,173); */
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    /* background: linear-gradient(to top, rgb(13,85,173) 10%, rgb(13,85,173) 90%) no-repeat; */
+    background-image: url(./Res/seoyon-bg2.jpeg);
+    background-size: cover;
+    /* background:rgb(248,249,250); */
+}
+
+.wrapper {
+    max-width: 400px;
+    border-radius: 10px;
+    border: 2px solid rgba(26,84,158,0.15);
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 20px 20px 80px rgba(1, 13, 29, 0.15);
+
+}
+
+.Loginwrapper {
+    max-width: 400px;
+    border-radius: 8px;
+    margin: 8.5rem auto;
+    padding: .8rem 2rem;
+    box-shadow: 20px 20px 80px rgba(1, 13, 29, 0.15);
+    border: 1px solid rgba(26,84,158,0.15);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #400485;
+    font-style: italic
+}
+
+.h4 {
+    font-family: 'Poppins', sans-serif
+}
+
+.input-field {
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid rgba(13,85,173,0.9);
+    color: rgba(13,85,173,0.9);
+}
+
+.input-field:hover{
+    color: #F8B221;
+    border: 1px solid #F8B221;
+}
+
+input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 60%;
+    padding: 0px 2px;
+    font-family: 'Poppins', sans-serif
+}
+
+.link {
+    text-decoration: none;
+    color: rgba(13,85,173,0.9);
+    font-weight: 700
+}
+
+a:hover {
+    text-decoration: none;
+    color: #7b4ca0
+}
+
+.option {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer
+}
+
+.option label.text-muted {
+    display: block;
+    cursor: pointer
+}
+
+.option input {
+    display: none
+}
+
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer
+}
+
+.option input:checked~.checkmark:after {
+    display: block
+}
+
+.option .checkmark:after {
+    content: "";
+    width: 13px;
+    height: 13px;
+    display: block;
+    background: #400485;
+    position: absolute;
+    top: 48%;
+    left: 53%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300ms ease-in-out 0s
+}
+
+.option input[type="radio"]:checked~.checkmark {
+    background: #fff;
+    transition: 300ms ease-in-out 0s;
+    border: 1px solid #400485
+}
+
+.option input[type="radio"]:checked~.checkmark:after {
+    transform: translate(-50%, -50%) scale(1)
+}
+
+.btn.btn-block {
+    border-radius: 20px;
+    background-color: rgba(13,85,173,0.9);
+    color: #fff
+}
+
+.btn.btn-block:hover {
+    background-color: #F8B221
+}
+
+@media(max-width: 575px) {
+    .wrapper {
+        margin: 28% 0 0 2.5rem;
+    }
+}
+
+@media(max-width: 540px){
+    .wrapper{
+        margin: 30 0 0 0;
+    }
+}
+
+/* @media(max-width: 1996px){
+    .wrapper{
+        margin: 10% 0 0 0;
+    }
+} */
+
+@media(max-width:424px) {
+    .wrapper {
+        height: auto;
+        padding: 30px 10px;
+        margin: 28% 25px 25px 25px;
+    }
+
+    .option {
+        position: relative;
+        padding-left: 22px
+    }
+
+    .option label.text-muted {
+        font-size: 0.95rem
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 2px
+    }
+
+    .option .checkmark:after {
+        top: 50%
+    }
+
+    #forgot {
+        font-size: 0.95rem
+    }
+}

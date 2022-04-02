@@ -1,0 +1,120 @@
+@import url('//netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/css/bootstrap-combined.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    align-items: center;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-image: url(./Res/seoyon-bg2.jpeg);
+    background-size: cover;
+
+}
+
+nav{
+    margin-left : 2rem;
+    padding: 0;
+}
+
+.CLMenuwrapper {
+    max-width: 470px;
+    border-radius: 8px;
+    margin: 0.3rem auto;
+    padding: .8rem 2rem;
+    box-shadow: 20px 20px 80px rgba(1, 13, 29, 0.15);
+    border: 1px solid rgba(26,84,158,0.15);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.brdr-dotted{
+    width: inherit;
+    border-bottom: 2px dotted gray;
+}
+
+
+.btn-wide{
+    width : 100%;
+}
+
+.btn-holder {
+  justify-content: flex-end;
+  display: flex;
+}
+
+/* .button-corner {
+   position: fixed;
+   bottom: 20px;
+   right: 20px; 
+} */
+
+
+a.btn-cklst{
+    background:rgb(251,179,13);
+}
+
+a.btn-wide{
+    color: #FFF;
+    font-size: 1.4rem;
+}
+
+.hero{
+    /* color: rgb(251,179,13); */
+    color:  rgb(12,94,167);
+}
+
+.pg-tite{
+    padding: 0;
+    margin: 0;
+    font-family: 'Archivo Black',sans-serif;
+    /* background-image: linear-gradient(to right, rgb(251,179,13), rgb(12,94,167)); */
+}
+
+.bg-clr{
+    background:rgb(248,249,250);
+}
+
+.gradient-text {
+    background-image: linear-gradient(180deg, rgba(251,179,1), rgba(255,255,251,0.8));
+    /* Fallback: Set a background color. */
+    background-color: rgba(251,179,1);
+        
+    /* Create the gradient. */
+    /* background-image: linear-gradient(
+        45deg,
+        #CA4246 16.666%, 
+        #E16541 16.666%, 
+        #E16541 33.333%, 
+        #F18F43 33.333%, 
+        #F18F43 50%, 
+        #8B9862 50%, 
+        #8B9862 66.666%, 
+        #476098 66.666%, 
+        #476098 83.333%, 
+        #A7489B 83.333%); */
+        
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+      
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+        
+    /* Animate the text when loading the element. */
+    /* This animates it on page load and when hovering out. */
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+
+.footer {
+    position: fixed;
+    height: 2rem;
+    bottom: 0;
+}
+
