@@ -31,8 +31,7 @@ nav{
     font-family: 'Titillium Web', sans-serif;
 }
 
-.brdr-dotted{
-    width: inherit;
+.brdr-solid-gray{
     border-bottom: 2px dotted gray;
 }
 
